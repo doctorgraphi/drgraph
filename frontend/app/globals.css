@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{font-family:Seravek;src:url('/fonts/Seravek.otf') format('opentype');font-weight:400}
+@font-face{font-family:Seravek;src:url('/fonts/Seravek-Medium.otf') format('opentype');font-weight:500}
+@font-face{font-family:Seravek;src:url('/fonts/Seravek-Bold.otf') format('opentype');font-weight:700}
+@font-face{font-family:YekanBakh;src:url('/fonts/YekanBakh-Regular.ttf') format('truetype');font-weight:400}
+@font-face{font-family:YekanBakh;src:url('/fonts/YekanBakh-Medium.ttf') format('truetype');font-weight:500}
+@font-face{font-family:YekanBakh;src:url('/fonts/YekanBakh-Bold.ttf') format('truetype');font-weight:700}
+@font-face{font-family:YekanBakh;src:url('/fonts/YekanBakh-Black.ttf') format('truetype');font-weight:900}
+
+:root{--brand:#EC7D22;--graphite:#494949;--paper:#F7F7F5;--line:rgba(73,73,73,.18)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--graphite);font-family:Seravek,Arial,sans-serif}a{text-decoration:none;color:inherit}
+::selection{background:var(--brand);color:#fff}.container{width:min(1440px,calc(100% - 56px));margin:auto}.font-persian{font-family:YekanBakh,Tahoma,sans-serif}
+.section{padding-block:clamp(100px,11vw,170px)}.section-label{display:flex;align-items:center;gap:12px;font-size:11px;letter-spacing:.15em;text-transform:uppercase;direction:ltr}.section-label:before{content:"";width:28px;height:1px;background:currentColor}
+.display{font-size:clamp(70px,12vw,180px);line-height:.78;letter-spacing:-.075em}.editorial{font-size:clamp(46px,7.8vw,125px);line-height:.88;letter-spacing:-.07em}
+@media(max-width:767px){.container{width:calc(100% - 32px)}.section{padding-block:90px}.editorial{font-size:55px}}
